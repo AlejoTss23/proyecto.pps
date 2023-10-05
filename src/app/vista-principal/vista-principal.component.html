@@ -1,0 +1,56 @@
+
+  
+    <header class="header">
+      <img src="./assets/logo-bbe-grande-blanco-horizontal.png" alt="">
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="/administracion">Administración</a></li>
+        </ul>
+      </nav>
+    </header>
+  <img src="./assets/imagenPrincipal.jpg" alt="" class="imagen-estilo">
+
+<div class="ecommerce-container">
+    <!-- Resto del contenido de tu vista principal -->
+    <section class="product" *ngFor="let product of products">
+      <!-- <img src="producto{{ product.id }}.jpg" alt="Producto {{ product.id }}"> -->
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <button (click)="verDetalles(product.id)">Ver detalles</button>
+    </section>
+  </div>
+<div>
+  <section class="historia">
+    <h1>Planta e Informacion</h1>
+    <img src="./assets/Planta.jpg" alt="">
+    <div></div>
+    <div></div>
+  </section>
+  <section class="historia"> 
+    <div> 
+<h2>Trazabilidad</h2> 
+    <h2>
+      Escaneo de QR
+    </h2>
+</div>
+<div> 
+    <h2>
+      Escanee el codigo de Barras
+    </h2>
+</div>
+</section>
+<section class="historia">
+  <h1>Video institucional y noticias</h1>
+  <p>La planta se halla estratégicamente ubicada, cercana a la mejor zona ganadera del país, y de importantes centros de consumo como la ciudad de Rosario y Buenos Aires.
+    El alto standard sanitario de la planta permite que se encuentre habilitada para la exportación a los países de más altas exigencias sanitarias.
+    Desde el comienzo del proceso de producción se asegura la Calidad a través de una producción controlada y de esta manera entregar a los clientes de
+    BLACK BAMBOO ENTERPRISES S.A.U.
+    un producto altamente confiable, con garantía de origen y trazabilidad.</p>
+</section>
+
+<div class="messi">
+  <footer>
+    <p>&copy; 2023 Black Bamboo Enterprises - Todos los derechos reservados.</p>
+  </footer>
+</div>

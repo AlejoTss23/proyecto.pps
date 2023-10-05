@@ -1,0 +1,25 @@
+<form (submit)="guardarEnCortes()">
+    <label for="numeroTropa">Número de Tropa:</label>
+    <input type="number" id="numeroTropa" [(ngModel)]="numeroTropa" name="numeroTropa" required>
+  
+    <label for="fechaFaena">Fecha de Faena:</label>
+    <input type="date" id="fechaFaena" [(ngModel)]="fechaFaena" name="fechaFaena" required>
+  
+    <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+    <input type="date" id="fechaVencimiento" [(ngModel)]="fechaVencimiento" name="fechaVencimiento" required>
+  
+    <label for="procedencia">Procedencia:</label>
+    <input type="text" id="procedencia" [(ngModel)]="procedencia" name="procedencia" required>
+  
+    <label for="tipoCorte">Tipo de Corte:</label>
+    <input type="text" id="tipoCorte" [(ngModel)]="tipoCorte" name="tipoCorte" required>
+  
+    <label for="pesoNeto">Peso Neto:</label>
+    <input type="number" id="pesoNeto" [(ngModel)]="pesoNeto" name="pesoNeto" required>
+  
+    <label for="codigoQR">Código QR:</label>
+    <input type="text" id="codigoQR" [(ngModel)]="codigoQR" name="codigoQR" required>
+  
+    <button type="submit">Guardar en Cortes</button>
+  </form>
+  
